@@ -19,16 +19,16 @@ void Desenha(void)
 	
 	//lateral esquerda
 	glPushMatrix();
-	glTranslatef(-12,0,-18);
- 	glScalef(1,1,35); 
+	glTranslatef(-11.6,0,-18);
+ 	glScalef(1.8,1,35); 
 	glColor3f(1.0,  0.0,  0.0);
 	glutSolidCube(1);
 	glPopMatrix();
 	
 	//lateral direita
 	glPushMatrix();
-	glTranslatef(12,0,-18);
- 	glScalef(1,1,35); 
+	glTranslatef(11.6,0,-18);
+ 	glScalef(1.8,1,35); 
 	glColor3f(   1.0,  0.0,  0.0 );
 	glutSolidCube(1);
 	glPopMatrix();
@@ -62,6 +62,34 @@ void Desenha(void)
 	glTranslatef(0,3.2,-16.5);
 	glColor3f(0.0f, 0.0f, 1.0f);
 	glutSolidTeapot(3);
+	glPopMatrix();
+	
+	
+	
+	//perfil vertical lateral esquerda
+	glPushMatrix();
+	glTranslatef(-11.6,15,-24);
+ 	glScalef(1.7,30,1); 
+	glColor3f(1.0,  0.0,  0.0);
+	glutSolidCube(1);
+	glPopMatrix();
+	
+	
+	//perfil vertical lateral direita
+	glPushMatrix();
+	glTranslatef(11.6,15,-24);
+ 	glScalef(1.7,30,1); 
+	glColor3f(1.0,  0.0,  0.0);
+	glutSolidCube(1);
+	glPopMatrix();
+	
+	
+	//perfil topo
+ 	glPushMatrix();
+ 	glTranslatef(0,30,-24);
+ 	glScalef(25,1,1); 
+	glColor3f(1.0,  0.0,  0.0 );
+	glutSolidCube(1);
 	glPopMatrix();
 	
 
